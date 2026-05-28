@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Registration</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <div class="main-card">
+    <div class="form-grid">
+
+      <!-- Left: User's Info -->
+      <div class="section-card">
+        <div class="section-title">User's Info</div>
+        <div class="field">
+          <label>Name</label>
+          <input type="text" id="fname" class="js-fname" placeholder="Name">
+        </div>
+        <div class="field">
+          <label>Surname</label>
+          <input type="text" id="lname" class="js-lname" placeholder="Surname">
+        </div>
+        <div class="field">
+          <label>Phone Number</label>
+          <input type="text" id="phone" class="js-phone" placeholder="998 90 123 45 67">
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input type="email" id="email" class="js-email" placeholder="example@mail.com">
+        </div>
+        <div class="field">
+          <label>Date of birth</label>
+          <input type="text" id="dob" class="js-dob" placeholder="DD.MM.YYYY">
+        </div>
+      </div>
+
+      <!-- Right: Work Details + Job Type -->
+      <div class="right-col">
+        <div class="section-card">
+          <div class="section-title">Work Details</div>
+          <div class="field">
+            <label>Company Name</label>
+            <input type="text" id="company" class="js-company" placeholder="Company">
+          </div>
+          <div class="two-col">
+            <div class="field">
+              <label>Job type</label>
+              <select id="jobtype" class="js-jobtype">
+                <option value="">Select...</option>
+                <option>Developer</option>
+                <option>Designer</option>
+                <option>Manager</option>
+                <option>Analyst</option>
+                <option>DevOps</option>
+                <option>QA Engineer</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Experience (years)</label>
+              <select id="exp" class="js-exp">
+                <option value="">Select...</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option><option>6</option>
+                <option>7</option><option>8</option><option>9</option>
+                <option>10+</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-title">Job Type</div>
+          <div class="field">
+            <label>Label</label>
+            <input type="text" id="joblabel" class="js-joblabel" placeholder="e.g. Developer" readonly>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Buttons -->
+    <div class="actions">
+      <button class="btn-cancel js-cancelBtn" id="cancelBtn">Отменить</button>
+      <button class="btn-save js-saveBtn" id="saveBtn">Сохранить</button>
+    </div>
+  </div>
+
+  <!-- User Lists Table -->
+  <div class="table-card">
+    <div class="table-title">User Lists</div>
+    <table>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Full name</th>
+          <th>Date of birth</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Company Name</th>
+          <th>Job Type</th>
+          <th>Experience</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody" class="js-userTableBody"></tbody>
+    </table>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
