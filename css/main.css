@@ -70,10 +70,6 @@ body {
   border-color: #3b82f6;
 }
 
-.field input.error,
-.field select.error {
-  border-color: #ef4444;
-}
 
 #joblabel {
   background: #f9fafb;
